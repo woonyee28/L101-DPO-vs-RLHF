@@ -1,0 +1,23 @@
+[project]
+name = "l101"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Woon Yee"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "torch (>=2.9.0,<3.0.0)",
+    "transformers (>=4.57.1,<5.0.0)",
+    "trl (>=0.25.0,<0.26.0)",
+    "datasets (>=4.4.1,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

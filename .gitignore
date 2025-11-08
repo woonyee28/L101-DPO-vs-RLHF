@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Experiments
+experiments/checkpoints/
+experiments/experiment_logs/
+*.pt
+*.bin
+
+# Data
+data/raw/
+data/processed/
+*.csv
+*.json
+
+# IDE
+.vscode/
+.idea/
+
