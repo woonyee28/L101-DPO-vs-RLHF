@@ -18,6 +18,7 @@ data/raw/
 data/processed/
 *.csv
 *.json
+src/data/.*
 
 # IDE
 .vscode/
