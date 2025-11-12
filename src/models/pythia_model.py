@@ -36,7 +36,7 @@ class PythiaModel:
         if not self.model or not self.tokenizer:
             raise RuntimeError("Model and Tokenizer are not loaded")
 
-        input_ids = self.tokenizer.encode(prompt, return_tensors="pt")
+        input_ids = self.tokenizer(prompt, return_tensors="pt").input_ids
 
         output = self.model.generate(input_ids, max_length=max_len, do_sample=True, temperature=temperature)
 

@@ -7,6 +7,10 @@ __pycache__/
 env/
 venv/
 
+# Notebooks
+notebooks/cache_dir
+notebooks/.ipynb_checkpoints
+
 # Experiments
 experiments/checkpoints/
 experiments/experiment_logs/
