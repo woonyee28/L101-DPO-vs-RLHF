@@ -13,6 +13,7 @@ class PythiaModel:
         self.name = name
         self.revision = revision
         self.cache_dir = cache_dir
+        self.model = None
 
         logger.info(f"Loading model {name} (revision: {revision}) at cache_dir: {cache_dir}")
 
