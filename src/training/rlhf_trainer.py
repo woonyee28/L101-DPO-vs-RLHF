@@ -9,14 +9,14 @@ import logging
 logger = logging.getLogger(__name__)
 
 class RLHF_PPO_Trainer:
-    def __init__(self, model, reward_model_base, value_model, processing_class, train_dataset, valid_ds, args = None):
+    def __init__(self, model, reward_model_base, reward_model_config, value_model, processing_class, train_dataset, valid_ds, args = None):
         self.model = model
         self.args = args
         self.processing_class = processing_class
-        self.train_dataset = self.prepare_dataset(train_dataset, processing_class)
-        self.valid_ds = self.prepare_dataset(valid_ds, processing_class)
         self.reward_model_base = reward_model_base
-        self.reward_model = self.prepare_reward_model(train_dataset, valid_ds)
+        self.reward_model = self.prepare_reward_model(train_dataset, valid_ds, reward_model_config)
+        self.valid_ds = self.prepare_dataset(valid_ds, processing_class)
+        self.train_dataset = self.prepare_dataset(train_dataset, processing_class)
         self.value_model = value_model
         self.create_ref_model(self.model)
 
@@ -53,7 +53,7 @@ class RLHF_PPO_Trainer:
                 )
         return mapped_dataset
 
-    def prepare_reward_model(self, train_dataset, valid_ds):
+    def prepare_reward_model(self, train_dataset, valid_ds, reward_model_config):
         logger.info("Creating reward model from base...")
 
         reward_model = AutoModelForSequenceClassification.from_pretrained(
@@ -63,17 +63,7 @@ class RLHF_PPO_Trainer:
                 )
         reward_model.config.pad_token_id = self.processing_class.pad_token_id
 
-        reward_config = RewardConfig(
-            output_dir="./pythia-70m-reward-model",
-            per_device_train_batch_size=4,
-            per_device_eval_batch_size=4,
-            num_train_epochs=1,
-            learning_rate=1e-5,
-            logging_steps=10,
-            save_strategy="epoch",
-            bf16=True,
-            remove_unused_columns=False,
-        )
+        reward_config = reward_model_config
         
         reward_trainer = RewardTrainer(
             model=reward_model,
