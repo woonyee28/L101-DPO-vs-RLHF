@@ -6,6 +6,10 @@
 # 12 Nov 2025
 - [x] Tokenizer and function to load model    
 
+# 13 Nov 2025
+- [x] Added training class and config for DPO using trl
+- [x] Added training class for RLHF using trl    
+
 #### To Do:           
-- [ ] Training function for RLHF, DPO using trl    
+- [ ] arrange config file for each experiment
 - [ ] Eval Scripts
