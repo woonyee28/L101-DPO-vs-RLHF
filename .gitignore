@@ -10,6 +10,8 @@ venv/
 # Notebooks
 notebooks/cache_dir
 notebooks/.ipynb_checkpoints
+notebooks/wandb
+notebooks/pythia*
 
 # Experiments
 experiments/checkpoints/
