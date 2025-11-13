@@ -9,7 +9,7 @@
 # 13 Nov 2025
 - [x] Added training class and config for DPO using trl
 - [x] Added training class for RLHF using trl    
+- [x] Arrange config file for each experiment
 
 #### To Do:           
-- [ ] arrange config file for each experiment
 - [ ] Eval Scripts
