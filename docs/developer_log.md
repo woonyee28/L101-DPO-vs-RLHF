@@ -11,5 +11,8 @@
 - [x] Added training class for RLHF using trl    
 - [x] Arrange config file for each experiment
 
-#### To Do:           
-- [ ] Eval Scripts
+# 15 Nov 2025           
+- [x] Eval Scripts
+
+### To Do:
+- [ ] Start Experimenting and do proper config tracking

@@ -1,0 +1,9 @@
+models:
+  - name: woon/pythia-70m-dpo-no-bias
+    display_name: Pythia_Bias_Baseline
+    description: Pythia (70M parameters). The Pythia project contains zero bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]

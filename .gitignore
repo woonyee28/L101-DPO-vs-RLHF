@@ -26,6 +26,11 @@ data/processed/
 *.json
 src/data/.*
 
+# Evals
+src/evals/benchmark_output
+src/evals/prod_env/credentials.conf
+src/evals/prod_env/cache
+
 # IDE
 .vscode/
 .idea/
