@@ -17,3 +17,11 @@ helm-run --run-entries \
 helm-summarize --suite bias-evaluation
 
 helm-server --port [8000 as default]
+
+
+#NOTE#
+- decodingtrust
+- bold
+- realtoxicityprompts
+
+all of these cant be used because of perspective api rate limit

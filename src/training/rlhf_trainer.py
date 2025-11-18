@@ -59,7 +59,6 @@ class RLHF_PPO_Trainer:
         reward_model = AutoModelForSequenceClassification.from_pretrained(
                 self.reward_model_base,
                 num_labels=1,
-                dtype=torch.bfloat16,
                 )
         reward_model.config.pad_token_id = self.processing_class.pad_token_id
 
