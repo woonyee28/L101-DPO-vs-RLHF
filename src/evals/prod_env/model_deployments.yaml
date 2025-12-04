@@ -1,9 +1,109 @@
 model_deployments:
-  - name: huggingface/pythia-70m-dpo-no-bias
-    model_name: woon/pythia-70m-dpo-no-bias
+  - name: huggingface/pythia-70m-dpo-100-0
+    model_name: woon/pythia-70m-dpo-100-0
     tokenizer_name: EleutherAI/gpt-neox-20b
     max_sequence_length: 2048
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO/checkpoint-20
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO/checkpoint-390
+
+  - name: huggingface/pythia-70m-dpo-80-20
+    model_name: woon/pythia-70m-dpo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-80-20/checkpoint-830
+
+  - name: huggingface/pythia-70m-dpo-50-50
+    model_name: woon/pythia-70m-dpo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-50-50/checkpoint-210
+
+  - name: huggingface/pythia-70m-ppo-100-0
+    model_name: woon/pythia-70m-ppo-100-0
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO/checkpoint-100
+
+  - name: huggingface/pythia-70m-ppo-80-20
+    model_name: woon/pythia-70m-ppo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-80-20/checkpoint-230
+
+  - name: huggingface/pythia-70m-ppo-50-50
+    model_name: woon/pythia-70m-ppo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-50-50/checkpoint-220
+
+  - name: huggingface/pythia-160m-dpo-100-0
+    model_name: woon/pythia-160m-dpo-100-0
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO/checkpoint-900
+
+  - name: huggingface/pythia-160m-dpo-80-20
+    model_name: woon/pythia-160m-dpo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-80-20/checkpoint-940
+
+  - name: huggingface/pythia-160m-dpo-50-50
+    model_name: woon/pythia-160m-dpo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-50-50/checkpoint-180
+
+
+  - name: huggingface/pythia-160m-ppo-100-0
+    model_name: woon/pythia-160m-ppo-100-0
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO/checkpoint-180
+
+  - name: huggingface/pythia-160m-ppo-80-20
+    model_name: woon/pythia-160m-ppo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO-80-20/checkpoint-160
+
+  - name: huggingface/pythia-160m-ppo-50-50
+    model_name: woon/pythia-160m-ppo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO-50-50/checkpoint-120

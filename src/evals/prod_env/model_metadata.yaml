@@ -1,9 +1,109 @@
 models:
-  - name: woon/pythia-70m-dpo-no-bias
-    display_name: Pythia_Bias_Baseline
+  - name: woon/pythia-70m-dpo-100-0
+    display_name: pythia-70m-dpo-100-0
     description: Pythia (70M parameters). The Pythia project contains zero bias data.
     creator_organization_name: Woon
     access: limited
     num_parameters: 95600000
     release_date: 2025-11-15
     tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-70m-dpo-80-20
+    display_name: pythia-70m-dpo-80-20
+    description: Pythia (70M parameters). The Pythia project contains 20% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-70m-dpo-50-50
+    display_name: pythia-70m-dpo-50-50
+    description: Pythia (70M parameters). The Pythia project contains 50% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-70m-ppo-100-0
+    display_name: pythia-70m-ppo-100-0
+    description: Pythia (70M parameters). The Pythia project contains zero bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-70m-ppo-80-20
+    display_name: pythia-70m-ppo-80-20
+    description: Pythia (70M parameters). The Pythia project contains 20% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-70m-ppo-50-50
+    display_name: pythia-70m-ppo-50-50
+    description: Pythia (70M parameters). The Pythia project contains 50% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-dpo-100-0
+    display_name: pythia-160m-dpo-100-0
+    description: Pythia (70M parameters). The Pythia project contains zero bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-dpo-80-20
+    display_name: pythia-160m-dpo-80-20
+    description: Pythia (70M parameters). The Pythia project contains 20% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-dpo-50-50
+    display_name: pythia-160m-dpo-50-50
+    description: Pythia (70M parameters). The Pythia project contains 50% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-ppo-100-0
+    display_name: pythia-160m-ppo-100-0
+    description: Pythia (70M parameters). The Pythia project contains zero bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-ppo-80-20
+    display_name: pythia-160m-ppo-80-20
+    description: Pythia (70M parameters). The Pythia project contains 20% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: woon/pythia-160m-ppo-50-50
+    display_name: pythia-160m-ppo-50-50
+    description: Pythia (70M parameters). The Pythia project contains 50% bias data.
+    creator_organization_name: Woon
+    access: limited
+    num_parameters: 95600000
+    release_date: 2025-11-15
+    tags: [TEXT_MODEL_TAG, PARTIAL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
