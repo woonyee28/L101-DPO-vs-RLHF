@@ -1,0 +1,61 @@
+pythia_31m_reward_config:
+  output_dir: "./pythia-31m-reward-model"
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  num_train_epochs: 5
+  learning_rate: 0.00001
+  logging_steps: 10
+  save_strategy: "steps"
+  bf16: true
+  remove_unused_columns: false
+  load_best_model_at_end: true
+  eval_strategy: "steps"
+  eval_steps: 20
+
+dpo_pythia_31m_config:
+  output_dir: "./pythia-31m-DPO"
+  eval_strategy: "steps"
+  eval_steps: 10
+  per_device_eval_batch_size: 8
+  save_strategy: "steps"
+  save_steps: 10
+  save_total_limit: null
+  num_train_epochs: 5
+  per_device_train_batch_size: 4
+  learning_rate: 0.000005
+  beta: 0.1
+  logging_steps: 5
+  logging_strategy: "steps"
+  report_to:
+    - "wandb"
+  run_name: "dpo_beta0.1_bias20_run1"
+  bf16: true
+  gradient_checkpointing: true
+  seed: 42
+  load_best_model_at_end: true
+
+ppo_pythia_31m_config:
+  output_dir: "./pythia-31m-PPO"
+  eval_strategy: "steps"
+  eval_steps: 10
+  per_device_eval_batch_size: 8
+  save_strategy: "steps"
+  save_steps: 10
+  save_total_limit: null
+  num_train_epochs: 5
+  per_device_train_batch_size: 16
+  learning_rate: 0.000005
+  kl_coef: 0.1
+  logging_steps: 5
+  logging_strategy: "steps"
+  report_to:
+    - "wandb"
+  run_name: "ppo_beta0.1_bias20_run1"
+  bf16: true
+  gradient_checkpointing: true
+  seed: 42
+  load_best_model_at_end: true
+  mini_batch_size: 32
+  kl_coef: 0.1
+  metric_for_best_model: "objective/rlhf_reward"
+  greater_is_better: true

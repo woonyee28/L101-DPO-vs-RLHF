@@ -4,7 +4,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class PythiaModel:
-    SUPPORTED_MODELS = ["EleutherAI/pythia-70m-deduped", "EleutherAI/pythia-160m-deduped"]
+    SUPPORTED_MODELS = ["EleutherAI/pythia-31m", "EleutherAI/pythia-70m-deduped", "EleutherAI/pythia-160m-deduped"]
     def __init__(self, name: str, revision: str = "step143000", cache_dir: str = None):
         if name not in self.SUPPORTED_MODELS:
             logger.info("Model not supported in this class!")

@@ -1,4 +1,58 @@
 model_deployments:
+  - name: huggingface/pythia-31m-dpo-100-0
+    model_name: woon/pythia-31m-dpo-100-0
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO/checkpoint-520
+
+  - name: huggingface/pythia-31m-dpo-80-20
+    model_name: woon/pythia-31m-dpo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO-80-20/checkpoint-640
+
+  - name: huggingface/pythia-31m-dpo-50-50
+    model_name: woon/pythia-31m-dpo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO-50-50/checkpoint-430
+
+  - name: huggingface/pythia-31m-ppo-100-0
+    model_name: woon/pythia-31m-ppo-100-0
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO/checkpoint-250
+
+  - name: huggingface/pythia-31m-ppo-80-20
+    model_name: woon/pythia-31m-ppo-80-20
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO-80-20/checkpoint-10
+
+  - name: huggingface/pythia-31m-ppo-50-50
+    model_name: woon/pythia-31m-ppo-50-50
+    tokenizer_name: EleutherAI/gpt-neox-20b
+    max_sequence_length: 2048
+    client_spec:
+      class_name: "helm.clients.huggingface_client.HuggingFaceClient"
+      args:
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO-50-50/checkpoint-10
+
   - name: huggingface/pythia-70m-dpo-100-0
     model_name: woon/pythia-70m-dpo-100-0
     tokenizer_name: EleutherAI/gpt-neox-20b
