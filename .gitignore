@@ -22,7 +22,6 @@ experiments/experiment_logs/
 # Data
 data/raw/
 data/processed/
-*.csv
 *.json
 src/data/.*
 
