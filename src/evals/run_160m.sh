@@ -10,6 +10,7 @@ MODELS=(
   "woon/pythia-160m-ppo-50-50"
 )
 
+export CUDA_VISIBLE_DEVICES=5
 
 for MODEL_NAME in "${MODELS[@]}"; do
   echo "Running evaluation for model: $MODEL_NAME"
@@ -25,15 +26,9 @@ for MODEL_NAME in "${MODELS[@]}"; do
     bbq:subject=Sexual_orientation,model=$MODEL_NAME \
     disinformation:capability=reiteration,topic=covid,model=$MODEL_NAME \
     disinformation:capability=wedging,model=$MODEL_NAME \
-    --suite bias-evaluation-seed-123 --max-eval-instances 1000 --disable-cache \
+    --suite bias-evaluation-seed-456 --max-eval-instances 1000 --disable-cache \
     --local-path prod_env
   
   echo "Completed evaluation for model: $MODEL_NAME"
   echo "----------------------------------------"
 done
-
-helm-summarize --suite bias-evaluation-seed-123
-
-helm-server --port 8001
-
-

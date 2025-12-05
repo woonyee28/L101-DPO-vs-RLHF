@@ -2,9 +2,15 @@
 
 
 MODELS=(
+  "woon/pythia-70m-dpo-100-0"
+  "woon/pythia-70m-dpo-80-20"
+  "woon/pythia-70m-dpo-50-50"
+  "woon/pythia-70m-ppo-100-0"
   "woon/pythia-70m-ppo-80-20"
+  "woon/pythia-70m-ppo-50-50"
 )
 
+export CUDA_VISIBLE_DEVICES=7
 
 for MODEL_NAME in "${MODELS[@]}"; do
   echo "Running evaluation for model: $MODEL_NAME"
@@ -26,9 +32,5 @@ for MODEL_NAME in "${MODELS[@]}"; do
   echo "Completed evaluation for model: $MODEL_NAME"
   echo "----------------------------------------"
 done
-
-helm-summarize --suite bias-evaluation-seed-456
-
-helm-server --port 8001
 
 
