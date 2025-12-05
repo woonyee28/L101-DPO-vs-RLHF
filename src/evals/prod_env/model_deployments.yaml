@@ -6,7 +6,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-DPO/checkpoint-520
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO/checkpoint-700
 
   - name: huggingface/pythia-31m-dpo-80-20
     model_name: woon/pythia-31m-dpo-80-20
@@ -15,7 +15,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-DPO-80-20/checkpoint-860
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO-80-20/checkpoint-770
 
   - name: huggingface/pythia-31m-dpo-50-50
     model_name: woon/pythia-31m-dpo-50-50
@@ -24,7 +24,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-DPO-50-50/checkpoint-160
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-DPO-50-50/checkpoint-150
 
   - name: huggingface/pythia-31m-ppo-100-0
     model_name: woon/pythia-31m-ppo-100-0
@@ -33,7 +33,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-PPO/checkpoint-100
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO/checkpoint-250
 
   - name: huggingface/pythia-31m-ppo-80-20
     model_name: woon/pythia-31m-ppo-80-20
@@ -42,7 +42,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-PPO-80-20/checkpoint-240
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO-80-20/checkpoint-10
 
   - name: huggingface/pythia-31m-ppo-50-50
     model_name: woon/pythia-31m-ppo-50-50
@@ -51,7 +51,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-deduped-PPO-50-50/checkpoint-20
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-31m-PPO-50-50/checkpoint-100
 
   - name: huggingface/pythia-70m-dpo-100-0
     model_name: woon/pythia-70m-dpo-100-0
@@ -60,7 +60,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO/checkpoint-420
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO/checkpoint-590
 
   - name: huggingface/pythia-70m-dpo-80-20
     model_name: woon/pythia-70m-dpo-80-20
@@ -69,7 +69,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-80-20/checkpoint-740
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-80-20/checkpoint-780
 
   - name: huggingface/pythia-70m-dpo-50-50
     model_name: woon/pythia-70m-dpo-50-50
@@ -78,7 +78,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-50-50/checkpoint-140
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-DPO-50-50/checkpoint-320
 
   - name: huggingface/pythia-70m-ppo-100-0
     model_name: woon/pythia-70m-ppo-100-0
@@ -87,7 +87,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO/checkpoint-240
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO/checkpoint-200
 
   - name: huggingface/pythia-70m-ppo-80-20
     model_name: woon/pythia-70m-ppo-80-20
@@ -96,7 +96,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO-80-20/checkpoint-200
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO-80-20/checkpoint-10
 
   - name: huggingface/pythia-70m-ppo-50-50
     model_name: woon/pythia-70m-ppo-50-50
@@ -105,7 +105,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO-50-50/checkpoint-160
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-70m-deduped-PPO-50-50/checkpoint-10
 
   - name: huggingface/pythia-160m-dpo-100-0
     model_name: woon/pythia-160m-dpo-100-0
@@ -114,7 +114,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO/checkpoint-140
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO/checkpoint-160
 
   - name: huggingface/pythia-160m-dpo-80-20
     model_name: woon/pythia-160m-dpo-80-20
@@ -123,7 +123,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-80-20/checkpoint-680
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-80-20/checkpoint-740
 
   - name: huggingface/pythia-160m-dpo-50-50
     model_name: woon/pythia-160m-dpo-50-50
@@ -132,7 +132,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-50-50/checkpoint-100
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-DPO-50-50/checkpoint-260
 
 
   - name: huggingface/pythia-160m-ppo-100-0
@@ -142,7 +142,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO/checkpoint-240
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO/checkpoint-120
 
   - name: huggingface/pythia-160m-ppo-80-20
     model_name: woon/pythia-160m-ppo-80-20
@@ -151,7 +151,7 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO-80-20/checkpoint-220
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO-80-20/checkpoint-120
 
   - name: huggingface/pythia-160m-ppo-50-50
     model_name: woon/pythia-160m-ppo-50-50
@@ -160,4 +160,4 @@ model_deployments:
     client_spec:
       class_name: "helm.clients.huggingface_client.HuggingFaceClient"
       args:
-        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO-50-50/checkpoint-120
+        pretrained_model_name_or_path: /home/wyn23/l101/notebooks/pythia-160m-deduped-PPO-50-50/checkpoint-200
