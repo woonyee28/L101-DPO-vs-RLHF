@@ -2,18 +2,6 @@
 
 
 MODELS=(
-  "woon/pythia-31m-dpo-100-0"
-  "woon/pythia-31m-dpo-80-20"
-  "woon/pythia-31m-dpo-50-50"
-  "woon/pythia-31m-ppo-100-0"
-  "woon/pythia-31m-ppo-80-20"
-  "woon/pythia-31m-ppo-50-50"
-  "woon/pythia-70m-dpo-100-0"
-  "woon/pythia-70m-dpo-80-20"
-  "woon/pythia-70m-dpo-50-50"
-  "woon/pythia-70m-ppo-100-0"
-  "woon/pythia-70m-ppo-80-20"
-  "woon/pythia-70m-ppo-50-50"
   "woon/pythia-160m-dpo-100-0"
   "woon/pythia-160m-dpo-80-20"
   "woon/pythia-160m-dpo-50-50"
