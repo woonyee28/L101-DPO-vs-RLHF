@@ -4,7 +4,7 @@ A modular framework for aligning and evaluating Large Language Models (specifica
 
 [Course Page](https://www.cl.cam.ac.uk/teaching/2526/L101/materials.html)
 
-## 📦 Installation
+## Installation
 
 This project primarily uses python virtual environments for dependency management.
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 poetry install
 ```
 
-## 🧩 Modularity & Architecture
+## Modularity & Architecture
 
 The project is designed with modularity at its core, allowing you to easily swap components or reuse them in other scripts. The codebase is organized into the following distinct modules under `src/`:
 
@@ -40,7 +40,7 @@ The project is designed with modularity at its core, allowing you to easily swap
   - `dpo_trainer.py`: Implements DPO training loops.
 - **`src/evals`**: Scripts and utilities for evaluating model performance in production-like environments.
 
-## 🔄 How to Reuse
+## How to Reuse
 
 You can import individual modules to build custom training pipelines or analysis scripts.
 
@@ -110,7 +110,7 @@ trainer = RLHF_PPO_Trainer(
 trainer.train()
 ```
 
-## 🚀 Running Experiments
+## Running Experiments
 
 Pre-defined configurations are available in the `configs/` directory. You can run training scripts from the `experiments` folder (or `src/evals` scripts) using these configurations.
 
@@ -119,7 +119,7 @@ Pre-defined configurations are available in the `configs/` directory. You can ru
 python src/evals/run_31m.sh
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Evals Environment
 If you plan to run evaluations using the `src/evals` scripts, you **must** update the model paths in the configuration file:
@@ -127,5 +127,5 @@ If you plan to run evaluations using the `src/evals` scripts, you **must** updat
 - **File**: `src/evals/prod_env/model_deployments.yaml`
 - **Action**: Replace the absolute paths (e.g., `/home/wyn23/l101/notebooks/...`) in `pretrained_model_name_or_path` fields with the actual paths to your local checkpoints. Then, run `src/evals/run_<model_size>m.sh`.
 
-## 📜 License
+## License
 [MIT](LICENSE)
